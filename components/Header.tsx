@@ -1,5 +1,6 @@
 import NextLogo from "./NextLogo";
 import SupabaseLogo from "./SupabaseLogo";
+import "./header.css";
 
 export default function Header() {
   return (
@@ -19,7 +20,7 @@ export default function Header() {
       </div>
       <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
       <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
+        The fastest way to build apps with {" "}
         <a
           href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
           target="_blank"
@@ -38,6 +39,15 @@ export default function Header() {
           Next.js
         </a>
       </p>
+      <div>
+        <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center font-bold typing-animation">Every Story, Counts!</p>
+      </div>
+      <a
+        className="py-2 px-3 flex rounded-md no-underline hover:bg-btn-background-hover border"
+        href="/notes"
+      >
+        Notes
+      </a>
       <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
     </div>
   );
